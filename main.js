@@ -14,6 +14,7 @@ document.addEventListener("DOMContentLoaded", async () => {
         const res = await fetch(URL)
         const data = await res.json()
         videoShowcase.innerHTML = ""
+        console.log(data)
 
         data.items.forEach((video) => {
             videoShowcase.innerHTML += `
