@@ -10,17 +10,22 @@ const videoShowcase = document.getElementById("videos")
 const year = document.getElementById('year')
 
 document.addEventListener("DOMContentLoaded", async () => {
-    const res = await fetch(URL)
-    const data = await res.json()
-    videoShowcase.innerHTML = ""
+    try {
+        const res = await fetch(URL)
+        const data = await res.json()
+        videoShowcase.innerHTML = ""
 
-    data.items.forEach((video) => {
-        videoShowcase.innerHTML += `
-        <a href="https://www.youtube.com/watch?v=${video.id.videoId}" target="_blank">
-            <div class="video" style="background-image: url(${video.snippet.thumbnails.high.url})"></div>
-        </a>
-    `
-    })
+        data.items.forEach((video) => {
+            videoShowcase.innerHTML += `
+            <a href="https://www.youtube.com/watch?v=${video.id.videoId}" target="_blank">
+                <div class="video" style="background-image: url(${video.snippet.thumbnails.high.url})"></div>
+            </a>
+        `
+        })
+    } catch(error) {
+        console.log(error)
+        console.log(error.response)
+    }
 
 })
 
