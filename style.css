@@ -12,15 +12,6 @@
     --text-primary: #fff;
 }
 
-
-/* :root {
-    --bg-details: rgb(27, 27, 27);
-    --bg: #000;
-    --primary-color: #d309b8;
-    --text-primary: #fff;
-} */
-
-
 body {
     margin: 0;
     font-family: 'Montserrat', sans-serif;
@@ -105,7 +96,7 @@ nav {
 }
 
 .nav-text-logo {
-    width: 80%;
+    width: 70%;
     margin: auto;
 }
 
@@ -115,12 +106,12 @@ header {
 }
 
 .header-logo {
-    width: 180px;
+    width: 140px;
 }
 
 header > h4 {
     letter-spacing: 2px;
-    margin-top: 5px !important;
+    margin-top: 15px !important;
 }
 
 
