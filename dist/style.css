@@ -177,6 +177,7 @@ footer {
 
 .copyright {
     letter-spacing: 5px;
+    font-size: 0.8em;
 }
 
 @media (min-width: 730px) {
