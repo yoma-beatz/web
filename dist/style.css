@@ -1,0 +1,153 @@
+* {
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: secondaryFont;
+    src: url(./font/font2.ttf);
+}
+
+@font-face {
+    font-family: primaryFont;
+    src: url(./font/font1.otf);
+}
+
+body {
+    margin: 0;
+    font-family: primaryFont;
+    background-color: #000;
+    color: #fff;
+}
+
+.text-secondary {
+    font-family: secondaryFont;
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+}
+
+nav {
+    padding: 10px 0;
+}
+
+.nav-title {
+    width: 280px;
+}
+
+nav > .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.line {
+    width: 50px;
+    height: 3px;
+    margin-bottom: 5px;
+    display: block;
+    background-color: #fff;
+}
+
+.showcase {
+    width: 100%;
+}
+
+
+.pt-15 {
+    margin-top: 15px;
+}
+
+.pb-15 {
+    margin-bottom: 15px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+}
+
+
+.logo {
+    width: 150px;
+    margin: 70px 0;
+}
+
+.hr {
+    width: 90%;
+    height: 2px;
+    margin: auto;
+    background-color: #fff;
+}
+
+.about-text {
+    font-size: 0.88em;
+}
+
+.about-text > p{
+    margin: 5px;
+}
+
+.footer-text {
+    font-size: 0.7em;
+}
+
+.email {
+    font-size: 1em;
+    margin: 25px 0 55px 0;
+}
+
+.menu {
+    position: absolute;
+    top: 49px;
+    right: 0;
+    width: 75%;
+    height: 0;
+    background-color: #fff;
+    transition: 0.5s all;
+    overflow: hidden;
+}
+
+.open {
+    height: 550px;
+}
+
+.menu-social-media {
+    color: #000;
+    padding:  20px 35px;
+}
+
+.links {
+    border-collapse: collapse;
+}
+
+.links td {
+    border: 1px solid #000;
+    width: 98px;
+    padding: 15px;
+    text-align: center;
+}
+
+.menu-social-media a {
+    color: #000;
+    text-decoration: none;
+    font-size: 2em;
+}
+
+.social-media > a{
+    color: #fff;
+    text-decoration: none;
+    margin-right: 25px;
+}
+
+.menu-logo {
+    width: 150px;
+    margin: auto;
+    display: block;
+    margin-top: 35px;
+}
